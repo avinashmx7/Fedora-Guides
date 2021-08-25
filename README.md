@@ -1,6 +1,6 @@
-#Fedora Guide
+# Fedora Guide
 
-###Rabbit SVN for nautilus (Files) GNOME
+### Rabbit SVN for nautilus (Files) GNOME
 1) Install RabbitSVN with dependencies
 2) Relocate RabbitVCS.py to enable menu options in nautilus.
 3) Restart nautilus.
