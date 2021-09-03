@@ -58,7 +58,7 @@ Install gnome for extra settings & customization.
 sudo install gnome-tweaks
 ```
 ---
-
+### Notice: There are some bugs in RabbitSVN it's recommended to use the svn from terminal.  
 ### Rabbit SVN for nautilus (Files) GNOME
 1) Install RabbitSVN with dependencies
 2) Relocate RabbitVCS.py to enable menu options in nautilus.
