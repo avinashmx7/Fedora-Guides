@@ -70,3 +70,27 @@ sudo cp /usr/share/nautilus-python/extensions/RabbitVCS.py /home/.local/share/na
 sudo rm /usr/share/nautilus-python/extensions/RabbitVCS.py
 nautilus -q
 ```
+
+### SVN Commands
+```
+svn status
+svn commit -m "COMMIT MESSAGE"
+```
+ #### SVN ignore list like gitignore.txt
+1) Create a "svnignore.txt"
+```
+.idea
+*.csproj
+*.sln*
+Builds
+Library
+Logs
+obj
+UserSettings
+```
+2) Execute this command to add files to ignore list.
+```
+svn propset svn:ignore -F svnignore.txt .
+```
+
+Reference: https://www.math-linux.com/linux/tip-of-the-day/article/svn-how-to-ignore-file-or-directory-in-subversion
