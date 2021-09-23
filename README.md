@@ -19,6 +19,11 @@ chmod a+rwx UnityHub.AppImage
 ```
 Double click to open UnityHub
 
+To solve "not enough space issue", launch Unity Hub using this below command.
+```
+TEMP=~/tmp ./UnityHub.AppImage
+```
+
 Note: Change the Unity installation path from Unity Hub settings. By default Unity is installed in Root Folder.
 
 ---
