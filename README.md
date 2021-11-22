@@ -97,5 +97,10 @@ UserSettings
 ```
 svn propset svn:ignore -F svnignore.txt .
 ```
-
 Reference: https://www.math-linux.com/linux/tip-of-the-day/article/svn-how-to-ignore-file-or-directory-in-subversion
+
+3) Execute this command to delete removed files from svn.
+```
+svn delete `svn status | grep ! | awk '{print $2}'`
+```
+
