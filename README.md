@@ -103,4 +103,8 @@ Reference: https://www.math-linux.com/linux/tip-of-the-day/article/svn-how-to-ig
 ```
 svn delete `svn status | grep ! | awk '{print $2}'`
 ```
+(OR)
+```
+svn status | grep ! | awk -F '       ' '{sub(" ","\\ ");print $2}'
+```
 
