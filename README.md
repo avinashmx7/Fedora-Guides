@@ -103,8 +103,5 @@ Reference: https://www.math-linux.com/linux/tip-of-the-day/article/svn-how-to-ig
 ```
 svn delete `svn status | grep ! | awk '{print $2}'`
 ```
-(OR)
-```
-svn delete `svn status | grep ! | awk -F '       ' '{sub(" ","\\ ");print $2}'`
-```
+Note: This command will not work with folder names with spaces.
 
