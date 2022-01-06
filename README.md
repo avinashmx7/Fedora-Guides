@@ -101,7 +101,7 @@ Reference: https://www.math-linux.com/linux/tip-of-the-day/article/svn-how-to-ig
 
 3) Execute this command to delete removed files from svn.
 ```
-svn delete `svn status | grep ! | awk '{print $2}'`
+svn st | grep ! | cut -d! -f2| sed 's/^ *//' | sed 's/^/"/g' | sed 's/$/"/g' | xargs svn rm
 ```
 Note: This command will not work with folder names with spaces.
 
